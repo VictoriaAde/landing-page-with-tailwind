@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+    <title>Tailwind - Landing page</title>
+    <!-- ... -->
+</head>
+
+<body>
+    <header class="bg-indigo-700 border-pink-500 px-4 py-3 w-full border-b-4 border-pink-500 flex justify-center ">
+        <div class="max-w-4xl w-full">
+            <div class="flex justify-between mb-5">
+                <img src="./imgs/image.svg" alt="scrimba" class="w-1/4">
+
+                <button type="button" class="block text-gray-500 hover:text-gray-400
+                    focus:text-white focus:outline-none sm:hidden"><i class="fas fa-bars"></i></button>
+            </div>
+            <div class="my-4">
+                <h1 class="text-2xl text-indigo-100">Want to learn Tailwind CSS?</h1>
+                <p class="text-sm text-indigo-200">Tailwind is a utility-£rst
+                    framework. Let's learn it step by step</p>
+                <div class="relative mt-4 flex justify-between ">
+                    <div class="mt-5">
+                        <a href="#"
+                            class="uppercase bg-pink-500 rounded-full px-4 py-2 text-indigo-100 font-bold text-xs">enroll
+                            now</a>
+                    </div>
+
+                    <div class="absolute right-0 bg-white rounded-full flex justify-center
+                items-center p-5 border-4
+                border-pink-500">
+                        <img src="./imgs/tailwindcss.svg" alt="" class="w-16 h-16">
+                    </div>
+                </div>
+
+            </div>
+    </header>
+
+    <main class="mt-16 w-full flex flex-col items-center">
+        <div class="max-w-4xl mx-4">
+            <h2 class="pb-1 font-bold text-xl text-indigo-700 border-b border-indigo-200">How It Works</h2>
+            <p class="text-sm mt-4 text-gray-600">Tailwind is designed for rapid development of
+                modern applications. At its core, it is a robust mobile-first design system built
+                with developer experience in mind. After using Tailwind CSS, you will find it
+                difficult to go back to use anything else. Learn all about it in this all-inclusive
+                course.</p>
+            <h2 class="mt-8 border-b border-indigo-200 pb-1 font-bold text-xl text-indigo-700">Advantages</h2>
+
+            <div class="flex flex-col sm:flex-row sm:-mx-2">
+                <div class="mt-4 sm:w-1/3">
+                    <div
+                        class="bg-white p-8 h-full border-b-4 border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8 ">
+                        <div class="w-18 p-2 rounded-full bg-gray-200 text-indigo-700">
+                            <img src="./imgs/css3.png" alt="css3" class="w-12 h-12 ">
+                        </div>
+                        <div class="mt-4 font-bold">No Custom CSS</div>
+                        <div class="mt-2 text-sm text-gray-600
+                            text-center">Tailwind's advanced class extraction will leave your
+                            project free of custom CSS.</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3">
+                    <div
+                        class="bg-white p-8 h-full border-b-4 border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8 ">
+                        <div class="w-18 p-2 rounded-full bg-gray-200 text-indigo-700">
+                            <img src="./imgs/291-2919003_png-file-svg-source-code-icon-png.png" alt="css3"
+                                class="w-12 h-12 ">
+                        </div>
+                        <div class="mt-4 font-bold">Developer Experience</div>
+                        <div class="mt-2 text-sm text-gray-600
+                            text-center">Tailwind is designed with your happiness in mind.
+                            The ease of performing changes is refreshing.</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 sm:w-1/3">
+                    <div
+                        class="bg-white p-8 h-full border-b-4 border-pink-500 rounded-lg flex flex-col items-center sm:mx-2 sm:p-3 md:p-8 ">
+                        <div class="w-18 p-2 rounded-full bg-gray-200 text-indigo-700">
+                            <img src="./imgs/mobile-phone-design.svg" alt="css3" class="w-12 h-12 ">
+                        </div>
+                        <div class="mt-4 font-bold">Mobile Friendly</div>
+                        <div class="mt-2 text-sm text-gray-600
+                            text-center">Modern applications demand mobile-friendly &
+                            Tailwind's responsive modifiers make it easy.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-800 py-12 mt-12 w-full flex flex-col items-center border-t-2 border-black">
+            <h2 class="pb-1 font-bold text-xl text-gray-400">
+                Sign up to download the free PDF</h2>
+
+            <form action="#" method="POST" class="max-w-xl w-full text-gray-200 mt-4 px-8 md:px-0">
+                <div class="flex flex-col md:flex-row md:-mx-2">
+                    <label for="first_name" class="sr-only">First name</label>
+                    <input class="bg-gray-700 mt-4 md:mx-2 border border-gray-600 rounded-lg py-2 px-4 block
+                    w-full md:w-1/2" type="text" placeholder="First name" id="first_name">
+
+                    <label for="last_name" class="sr-only">Last name</label>
+                    <input
+                        class="bg-gray-700 mt-4 md:mx-2 border border-gray-600 rounded-lg py-2 px-4 block w-full md:w-1/2"
+                        type="text" placeholder="Last name" id="last_name">
+                </div>
+
+                <div class="flex flex-col md:flex-row md:-mx-2">
+                    <label for="email" class="sr-only">Your email</label>
+                    <input class="bg-gray-700 mt-4 md:mx-2 border
+                    border-gray-600 rounded-lg py-2 px-4 block
+                    w-full md:w-1/2" type="email" placeholder="john@email.com" id="email">
+                    <label for="title" class="sr-only">Title</label>
+                    <input class="bg-gray-700 mt-4 md:mx-2
+                    border border-gray-600 rounded-lg py-2 px-4
+                    block w-full md:w-1/2" type="text" placeholder="Your title" id="title">
+                </div>
+
+                <div class="flex flex-con md:flex-row md:-mx-2">
+                    <button class="bg-blue-600 text-sm mt-4 md:mx-2 rounded-lg py-2 px-4 block w-full">Create
+                        account</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="w-full bg-gray-800 pb-8 text-center text-xs font-light text-gray-600 ">
+        <p>Copyright &copy; 2019 Scrimba</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/db9995df21.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
